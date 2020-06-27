@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+
+
+  <body>
+    <div id="impress">
+    <!-- all that comes in this div is the presentation -->
+
+      <div class="step" data-x=0 data-y=0>
+        <!-- this is a "slide" with x,y,z position -->
+        <p>This is my first slide.</p>
+      </div>
+
+      <div class="step" data-x=0 data-y=1000>
+        <p>This is my second slide.</p>
+      </div>
+
+    </div>
+
+    <!-- script from tutorial to call impress.js which is in the directory of this html -->
+    <script src="js/impress.js"></script>
+    <script>
+      impress().init()
+    </script>
+  </body>
+
+</html>
