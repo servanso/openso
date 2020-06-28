@@ -1,27 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=1024">
+    <title>Cours d'allemand personnalisé</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
   </head>
 
-
-
   <body>
-    <div id="impress">
-    <!-- all that comes in this div is the presentation -->
 
-      <div class="step" data-x=0 data-y=0>
-        <!-- this is a "slide" with x,y,z position -->
-        <p>This is my first slide.</p>
+    <div id="impress" data-width=1024 data_height=768>
+    <!-- all that comes in this div is the presentation. Other attributes are: data-transition-duration, data-max-scale, data-min-scale, data-perspective, data-autoplay... -->
+
+      <div id="intro" class="step" data-x=0 data-y=0>
+        <!-- this is a "slide" with x,y,z position of its center, other attributes are: data-z, data-rotate, data-scale, data-rotate-x:y:z -->
+        <h1>Les cas en allemand expliqués à ceux qui ont appris l'allemand avec leur Oma et leur Opa !</h1>
       </div>
 
-      <div class="step" data-x=0 data-y=1000>
-        <p>This is my second slide.</p>
+      <div id="akkusativ" class="step" data-x=1000 data-y=0>
+        <h1>Akkusativ</h1>
+        <p>Le cas le plus facile: cela ne change qu'au <b>masculin singulier</b> où <b>der</b> (et al.) devient <b>den</b>:</p>
+        <ol>
+          <li>devant un objet direct</li>
+          <li>toujours après <b>für</b>, <b>durch</b>, <b>ohne</b></li>
+          <li>quand il y a déplacement</li>
+        </ol>
+        <p>Exemples:</p>
+        <ol>
+          <li>Du bestellst <b>einen</b> Nachtisch, aber nur <b>ein</b> Schweinshachse.</li>
+          <li>Ihr interressiert euch für <b>diesen</b> Artist. Er geht durch <b>den</b> Wald.</li>
+          <li>Er legt <b>den</b> Teppich aud <b>den</b> Boden. Aber ich schmeiße <b>dein</b> Radio an <b>die</b> Wand.</li>
+        </ol>
+        <p>Toutes les explications, par des vrais pro: <a href="https://deutsch.lingolia.com/de/grammatik/deklination/akkusativ">ici</a></p>
       </div>
 
+      <div id="dativ" class="step" data-x=2000 data-y=0>
+        <h1>Dativ</h1>
+        <p>Celui-là c'est la cata: <b>der</b> et <b>das</b> deviennent <b>dem</b>, <b>die</b> féminin devient <b>der</b>, <b>die</b> pluriel devient <b>den</b> (-n):</p>
+        <ol>
+          <li>devant un objet <b>indirect</b></li>
+          <li>toujours après <b>bei</b>, <b>von</b>, <b>seit</b>, <b>nach</b>, <b>mit</b>, <b>aus</b>, <b>zu</b></li>
+          <li>pour parler de la position</li>
+        </ol>
+        <p>Exemples:</p>
+        <ol>
+          <li>Du bestellst <b>deinem</b> Freund einen Nachtisch.  </li>
+          <li>Mit <b>meiner</b> Freundin wohnen wir in Hamburg seit <b>mehreren Monaten</b>.</li>
+          <li>Der Teppich liegt auf <b>dem</b> Boden. Dein Radio hängt an <b>der</b> Wand.</li>
+        </ol>
+        <p>Toutes les explications, par des vrais pro: <a href="https://deutsch.lingolia.com/de/grammatik/deklination/dativ">ici</a>!</p>
+      </div>
+
+      <div id="genitiv" class="step" data-x=3000 data-y=0>
+        <h1>Genitiv</h1>
+        <p>Celui-là est très chic (et un peu désuet comme tu sais). <b>der</b> et <b>das</b> deviennent <b>des</b> (-s), <b>die</b> féminin <b>et</b> pluriel deviennent <b>der</b>:</p>
+        <ol>
+          <li>pour signifier l'appartenance</li>
+          <li>après <b>während</b>, <b>außerhalb</b></li>
+          <li>avec des constructions chelou comme '<b>meiner</b> Meinung dazu...'</li>
+        </ol>
+        <p>Exemples:</p>
+        <ol>
+          <li>Die Freudin <b>Davids</b> ist super intelligent. Das Ende <b>der</b> Welt kommt schon.</li>
+          <li>Während <b>des Höllenfests</b> wird David zu glücklich.</li>
+          <li><b>Unserer</b> Meinung nach ist es das beste Festival <b>Europas</b>.</li>
+        </ol>
+        <p>Toutes les explications, par des vrais pro: <a href="https://deutsch.lingolia.com/de/grammatik/deklination/genitiv">ici</a>!</p>
+      </div>
     </div>
 
+    <div id="overview" class="step">
+
+    </div>
     <!-- script from tutorial to call impress.js which is in the directory of this html -->
     <script src="js/impress.js"></script>
     <script>
